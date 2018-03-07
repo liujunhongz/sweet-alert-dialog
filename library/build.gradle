@@ -1,0 +1,19 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.liujunhongz'
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion 15
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    //implementation 'com.pnikosis:materialish-progress:1.0'
+}
