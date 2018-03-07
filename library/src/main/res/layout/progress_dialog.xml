@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/loading"
+              android:layout_width="@dimen/alert_width"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:background="@drawable/dialog_background"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/progress_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"
+        android:orientation="vertical">
+
+        <cn.pedant.sweetalert.ProgressWheel
+            android:id="@+id/progressWheel"
+            android:layout_width="@dimen/progress_circle_radius"
+            android:layout_height="@dimen/progress_circle_radius"
+            android:layout_gravity="center"
+            app:matProg_progressIndeterminate="true"/>
+
+        <ImageView
+            android:id="@+id/custom_image"
+            android:layout_width="@dimen/progress_circle_radius"
+            android:layout_height="@dimen/progress_circle_radius"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="17dp"
+        android:singleLine="true"
+        android:text="@string/dialog_default_title"
+        android:textColor="@color/progress_dialog_text_color"
+        android:textSize="@dimen/progress_dialog_text_size"/>
+</LinearLayout>
