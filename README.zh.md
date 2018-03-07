@@ -28,11 +28,12 @@ Android版的SweetAlert，清新文艺，快意灵动的甜心弹框
 **Gradle**
 
     repositories {
-        mavenCentral()
+         // add follow line
+         maven { url "https://jitpack.io" }
     }
 
     dependencies {
-        compile 'cn.pedant.sweetalert:library:1.3'
+        implementation 'com.github.liujunhongz:sweet-alert-dialog:2.1'
     }
 
 ## 如何开始
